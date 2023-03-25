@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: "Signatra";
+            font-style: normal;
+            src: url('assets/fonts/Signatra.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        body {
+            background-image: url('assets/images/background.jpg');
+            background-size: cover;
+        }
+        .header {
+            padding: 0.15ch;
+            font-family: 'Signatra';
+            font-size: 84px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .button-link {
+            font-family: 'Signatra';
+            display: block;
+            width: 900px;
+            max-width: 900px;
+            margin: 10px;
+            border: 8px solid white;
+            border-radius: 30px;
+            padding: 20px;   
+            box-shadow: none;
+            font-size: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
     <title>N8's Landscaping</title>
 </head>
 <body>
-    <p>this site is under development!!</p>
+    <div class="header" style="text-align: center">
+        <h1 style="color: rgb(255, 255, 255)">N8's Landscaping</h1>
+    </div>
+
+    <div class="container">
+        <div class="buttons">
+            <button class="button-link" id="lawn-care">Lawn Care</button>
+            <button class="button-link" id="arborists">Arborists</button>
+            <button class="button-link" id="demos">Demos</button>
+            <button class="button-link" id="irrigation-lighting">Irrigation/Low Voltage Lighting</button>
+            <button class="button-link" id="about-us">About Us</button>
+            <button class="button-link" id="contact-quotes">Contact Us/Quotes</button>
+        </div>
+    </div>
 </body>
 </html>
