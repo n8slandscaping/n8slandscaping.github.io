@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <script type="text/javascript" src="../scripts/email.js"></script>
     <title>N8L | Contact Us</title>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+
+    <p style="margin-bottom: 100px;"><a href="tel:800888950" style="color: green;">Call</a> 
+        or email us at <a href="mailto:n8slandscaping@gmail.com" style="color: green;">n8slandscaping (at) gmail (dot) com</a> for any questions or inquiries!</p>
+
+
+    <div class="form-container">
+        <form class="contact-form" action="" method="post">
+            <h2 style="color: white;">Quick Email</h3>
+            <h3 style="color: white">For business inquiries and or quotes.</h3>
+
+            <div class="fform">
+                <h3>Name</h3>
+                <fieldset style="border: 0cm;">
+                    <input id="name" placeholder="Your Name" type="text" tabindex="1"
+                    required autofocus>
+                </fieldset>
+            </div>
+            <div class="fform">
+                <h3>Email</h3>
+                <fieldset>
+                    <input id="userEmail" placeholder="Your email" type="email" tabindex="2"
+                    required>
+                </fieldset>
+            </div>
+            <div class="fform">
+                <h3>Service</h3>
+                <fieldset>
+                    <select name="services" id="services">
+                        <optgroup label="Services">
+                            <option value="lawncare">Lawn Care</option>
+                            <option value="arborist">Arborist Services</option>
+                            <option value="irrigation">Irrigation/Low Voltage Lighting</option>
+                            <option value="more">General Questions/Inquiries or more than one service</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="fform">
+                <h3>Message: </h3>
+                <fieldset>
+                    <textarea id="message" cols="25" rows="3" placeholder="Include a date to schedule an appointment for a quote. A spot is not guaranteed."></textarea>
+                </fieldset>
+                <button class="form-send" onclick="mailPrompt()" disabled>Send Email</button>
+                <h4 style="font-family: 'Gill Sans'; color: yellowgreen;">**For project quotes, we will ignore emails that do not include a real residential property address or
+                    missing information such as, a phone number, a real email, name of property owner, details of the project**
+                </h4>
+            </div>
+        </form>
+
+    </div>
 </body>
 </html>
